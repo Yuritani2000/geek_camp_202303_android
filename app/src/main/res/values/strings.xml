@@ -3,4 +3,8 @@
     <string name="title_activity_resister_user">ResisterUserActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_stidauthentication">STIDAuthenticationActivity</string>
+    <string name="user_name">ユーザ名</string>
+    <string name="stu_id">学籍番号</string>
+    <string name="password">パスワード</string>
+    <string name="password_re">パスワード (再入力)</string>
 </resources>
