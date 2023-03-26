@@ -1,5 +1,6 @@
 package com.example.geek202303.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.geek202303.model.TripRepository
 import com.example.geek202303.view.*
@@ -39,6 +40,7 @@ class TripListViewModel @Inject constructor() : ViewModel() {
     }
 
     private fun updateListEvent() {
+        Log.d("debug", "呼ばれた")
         TripRepository.executorService.execute {
             repository.getTripList()
         }

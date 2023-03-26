@@ -49,7 +49,7 @@ fun TripList(
 ) {
     Column() {
         Button(
-            onClick = { onClickTrip },
+            onClick = { onClickTrip() },
         ) {
             Text(
                 text = stringResource(id = R.string.update_list),

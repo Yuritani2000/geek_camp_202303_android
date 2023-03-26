@@ -29,7 +29,9 @@ import androidx.compose.ui.unit.dp
 import com.example.geek202303.navigation.AppNavHost
 import com.example.geek202303.ui.theme.Geek202303Theme
 import com.example.geek202303.view.TripList
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
