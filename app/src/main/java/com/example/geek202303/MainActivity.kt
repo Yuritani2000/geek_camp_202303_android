@@ -26,16 +26,20 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.geek202303.navigation.AppNavHost
 import com.example.geek202303.ui.theme.Geek202303Theme
+import com.example.geek202303.view.TripList
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Geek202303Theme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-//                    MessageCard(Message("Android", "Jetpack Compose"))
-                    Conversation(messages = SampleData.conversationSample)
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
+                    AppNavHost()
                 }
             }
         }
@@ -84,7 +88,9 @@ fun MessageCard(msg: Message) {
                 shape = MaterialTheme.shapes.medium,
                 elevation = 1.dp,
                 color = surfaceColor,
-                modifier = Modifier.animateContentSize().padding(1.dp)
+                modifier = Modifier
+                    .animateContentSize()
+                    .padding(1.dp)
             ) {
                 Text(
                     text = msg.body,

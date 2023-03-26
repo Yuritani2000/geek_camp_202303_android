@@ -7,4 +7,5 @@
     <string name="stu_id">学籍番号</string>
     <string name="password">パスワード</string>
     <string name="password_re">パスワード (再入力)</string>
+    <string name="update_list">リストを更新</string>
 </resources>
